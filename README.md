@@ -1,34 +1,44 @@
 # BaToPay
 
-<img src="https://img.shields.io/badge/version-1.0.0-lightgrey" alt="version">
-<img src="https://img.shields.io/badge/PHP-8.3%2B-777BB4" alt="php">
-<img src="https://img.shields.io/badge/MySQL-8%2B-4479A1" alt="mysql">
-<img src="https://img.shields.io/badge/docs-EN%20%7C%20FA-blue" alt="docs">
+**v1.0.0** · PHP 8.3+ · MySQL 8+ · Payment + Form Builder Platform
 
-**Payment platform + form builder + merchant API** by [BaToHub](https://t.me/BaToHub)
+| | |
+|--|--|
+| Brand | [BaToHub](https://t.me/BaToHub) |
+| Bot | [@BaToPay_Bot](https://t.me/BaToPay_Bot) |
+| Support | [@BaTo_Help](https://t.me/BaTo_Help) |
+| Bugs / Ideas | [@DatPHP](https://t.me/DatPHP) |
 
-Bot: **[@BaToPay_Bot](https://t.me/BaToPay_Bot)** · Footer: **Powered by BaToHub**
+**فارسی:** [README.fa.md](./README.fa.md) · **API:** [docs/API.en.md](./docs/API.en.md)
 
-| Language | Docs |
-|----------|------|
-| **English** | This file · [API EN](./docs/API.en.md) |
-| **فارسی** | [README.fa.md](./README.fa.md) · [API FA](./docs/API.fa.md) |
+## What is BaToPay?
 
-## Merchant flow
-1. Apply `/merchant/apply.php`
-2. Admin approves
-3. Seller panel + API Key `btp_...`
-4. Connect bot via REST API
+Self-hosted payment platform: dynamic pages, post-payment forms, merchant API, Telegram bot + Mini App.
 
-## Install (cPanel)
-Document root → `public/` · `/install` · delete install · `/admin/login.php`
+## Install
+
+Document root = `public/` · `/install` · remove install · `/admin/login.php`
 
 ## API
+
 ```
 POST /api/v1/create-payment.php
-Authorization: Bearer btp_xxx
+Authorization: Bearer btp_...
 {"amount":2500000,"order_id":"ord-1"}
 ```
-amount = Rial.
+
+amount = Rial. v2: `POST /api/v2/payments.php`
+
+## Gateways
+
+cubepay · blupal · sandbox (test)
+
+## Security
+
+Server-side verify, idempotent callbacks, hashed API keys, CSRF, rate limits.
+
+## Telegram
+
+@BaToPay_Bot · Support @BaTo_Help · Ideas @DatPHP · Channel @BaToHub
 
 © BaToHub · Powered by BaToHub

@@ -1,18 +1,22 @@
 # باتو پی (BaToPay)
 
-[English](./README.md) · v1.0.0 · PHP 8.3+ · MySQL 8+
+v1.0.0 · PHP 8.3+ · MySQL 8+
 
-محصول [BaToHub](https://t.me/BaToHub) · ربات [@BaToPay_Bot](https://t.me/BaToPay_Bot)
+| | |
+|--|--|
+| برند | [@BaToHub](https://t.me/BaToHub) |
+| ربات | [@BaToPay_Bot](https://t.me/BaToPay_Bot) |
+| پشتیبانی | [@BaTo_Help](https://t.me/BaTo_Help) |
+| باگ / ایده | [@DatPHP](https://t.me/DatPHP) |
 
-## فروشنده شدن
-1. `/merchant/apply.php`
-2. تأیید ادمین
-3. `/merchant/login.php` → API Key و فاکتور دستی
+[English](./README.md)
 
 ## نصب
-Document Root = `public/` · `/install` · حذف install · `/admin/login.php`
+
+Document Root = `public/` → `/install` → `/admin/login.php`
 
 ## API
-مستندات: [docs/API.fa.md](./docs/API.fa.md) · `/docs/`
+
+v1: `/api/v1/create-payment.php` (ریال) · v2: `/api/v2/payments.php`
 
 © BaToHub · Powered by BaToHub

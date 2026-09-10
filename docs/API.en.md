@@ -1,30 +1,22 @@
-# BaToPay API Reference v1
+# BaToPay API
 
-For merchants connecting bots to BaToPay.
+@BaToPay_Bot · @BaToHub · Support @BaTo_Help · Bugs @DatPHP
 
 ## Auth
-```
-Authorization: Bearer btp_<your_api_key>
-```
+`Authorization: Bearer btp_<key>`
 
-## Create payment
-`POST /api/v1/create-payment.php`
+## v1 Create
+`POST /api/v1/create-payment.php` — amount in Rial
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| amount | yes | Rial |
-| order_id | yes | Unique (max 64) |
-| callback_url | no | Notification URL |
-| description | no | Max 255 |
-| page_slug | no | Page slug |
+## v1 Verify
+`POST /api/v1/verify-payment.php` — trust paid:true only
 
-## Verify
-`POST /api/v1/verify-payment.php` — `{ "order_id": "..." }` — check `paid === true`.
+## v2
+`POST /api/v2/payments.php` · `GET /api/v2/payments.php?order_id=`
+Optional: Idempotency-Key
 
-## Status
-`GET /api/v1/status.php?order_id=...`
+## Webhooks
+X-BaToPay-Signature = HMAC-SHA256(body, secret)
 
-## Become a merchant
-1. `/merchant/apply.php`
-2. Admin approval
-3. `/merchant/login.php` → API Key
+## Sandbox
+Gateway identifier: sandbox
