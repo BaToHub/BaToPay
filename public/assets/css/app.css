@@ -1,0 +1,4 @@
+/* BaToPay shared — pearl + soft gold */
+:root{--pearl:#faf9f7;--gold:#c9a227;--text:#1a1a1a;--muted:#6b7280}
+body{background:var(--pearl);color:var(--text);font-family:Tahoma,Segoe UI,sans-serif}
+a{color:var(--gold)}
