@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace App\Payments;
 
-/** Sandbox/Test gateway — never touches real credentials. */
 final class SandboxGateway implements PaymentGatewayInterface
 {
     public function getName(): string { return 'Sandbox'; }
