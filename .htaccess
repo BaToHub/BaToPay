@@ -1,12 +1,4 @@
-# BaToPay Root Protection
-# Point document root to /public in production.
-# If document root is project root, redirect everything to public.
-
 RewriteEngine On
-
-# Block direct access to sensitive directories
 RewriteRule ^(app|config|database|storage|install)/ - [F,L]
-
-# Redirect to public if not already there (for shared hosting without vhost)
 RewriteCond %{REQUEST_URI} !^/public/
 RewriteRule ^(.*)$ public/$1 [L]
