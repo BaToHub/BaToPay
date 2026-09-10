@@ -1,21 +1,11 @@
 # BaToPay 1.0.0
 
-Full source package: download from repository releases or clone this repo.
+Payment platform by BaToHub.
 
-Local complete archive was built as BaToPay-1.0.0-full.tar.gz during development.
+## Added
+Payment engine · Merchant API v1/v2 · Gateways · Sandbox · Telegram bot · Webhooks · Security center · Analytics · Installer
 
-## Includes
-- Admin panel (pearl + gold theme)
-- Merchant seller panel + API keys + manual invoices
-- Telegram bot + Mini App
-- REST API v1 for bots
-- Payment gateways integration layer
-- Web installer
+## Support
+@BaTo_Help · @DatPHP · @BaToHub · @BaToPay_Bot
 
-## Install
-1. Point document root to `public/`
-2. Run `/install`
-3. Remove `install/`
-4. Configure gateways & Telegram in admin
-
-Bot: @BaToPay_Bot · Powered by BaToHub
+Powered by BaToHub
