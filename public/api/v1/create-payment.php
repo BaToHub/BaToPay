@@ -1,7 +1,6 @@
 <?php
 /**
  * POST /api/v1/create-payment.php
- * CubePay-compatible style API for third-party bots
  * Auth: Authorization: Bearer btp_xxxxx
  */
 declare(strict_types=1);
