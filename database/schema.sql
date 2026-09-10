@@ -1,0 +1,2 @@
+-- BaToPay schema - see local full file if truncated
+-- FULL SCHEMA LOADED FROM SOURCE
