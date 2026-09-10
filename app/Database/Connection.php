@@ -2,6 +2,7 @@
 /**
  * BaToPay PDO Database Connection (Singleton)
  */
+
 declare(strict_types=1);
 
 namespace App\Database;
