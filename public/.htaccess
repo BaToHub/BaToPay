@@ -1,0 +1,23 @@
+# BaToPay Public Root
+
+RewriteEngine On
+
+RewriteRule ^\.env - [F,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^pay/([a-zA-Z0-9\-_]+)/?$ pay.php?slug=$1 [QSA,L]
+
+RewriteRule ^payment/callback/?$ callback.php [QSA,L]
+
+RewriteRule ^api/v1/create-payment/?$ api/v1/create-payment.php [QSA,L]
+RewriteRule ^api/v1/verify-payment/?$ api/v1/verify-payment.php [QSA,L]
+RewriteRule ^api/v1/status/?$ api/v1/status.php [QSA,L]
+
+RewriteRule ^telegram/webhook/?$ telegram/webhook.php [QSA,L]
+RewriteRule ^miniapp/?$ miniapp/index.php [QSA,L]
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
