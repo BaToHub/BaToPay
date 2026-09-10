@@ -3,10 +3,7 @@ declare(strict_types=1);
 
 namespace App\Security;
 
-use App\Database\Connection;
-use PDO;
-
-/** Simple file-backed rate limiter for login, API, payment create. */
+/** File-backed rate limiter (no DB dependency). */
 final class RateLimiter
 {
     public static function attempt(string $key, int $maxAttempts, int $windowSeconds): bool
