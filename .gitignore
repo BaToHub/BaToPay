@@ -1,0 +1,16 @@
+.env
+config/installed.lock
+config/app.local.php
+storage/logs/*
+!storage/logs/.gitkeep
+storage/cache/*
+!storage/cache/.gitkeep
+storage/sessions/*
+!storage/sessions/.gitkeep
+storage/uploads/*
+!storage/uploads/.gitkeep
+storage/secure/*
+!storage/secure/.gitkeep
+!storage/secure/.htaccess
+vendor/
+*.log
